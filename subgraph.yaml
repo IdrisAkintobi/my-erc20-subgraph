@@ -10,14 +10,12 @@ dataSources:
     source:
       address: "0x6B175474E89094C44Da98b954EedeAC495271d0F"
       abi: Dai
-      startBlock: 8928158
+      startBlock: 20901551
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
       language: wasm/assemblyscript
       entities:
-        - Approval
-        - LogNote
         - Transfer
       abis:
         - name: Dai
