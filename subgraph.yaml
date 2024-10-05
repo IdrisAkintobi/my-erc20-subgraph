@@ -23,10 +23,6 @@ dataSources:
         - name: Dai
           file: ./abis/Dai.json
       eventHandlers:
-        - event: Approval(indexed address,indexed address,uint256)
-          handler: handleApproval
-        - event: LogNote(indexed bytes4,indexed address,indexed bytes32,indexed bytes32,bytes)
-          handler: handleLogNote
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
       file: ./src/dai.ts
